@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 120vh;
+}
+.media{
+    display: none;
+}
+main{
+    width: 50%;
+    height: 100%;
+    margin: 200px auto;
+}
+header{
+    background-color: #F5F5F6;
+    display: flex;
+    justify-content: space-around;
+}
+header img{
+    width: 89px;
+    height: 23px;
+    margin-top: 25px;
+}
+header ul{
+    list-style-type: none;
+    width: 70%;
+    display: flex;
+    margin-top: 25px;
+    padding: 0px;
+}
+header li{
+    margin: 0px 12px;
+}
+header a{
+    color: rgb(149, 155, 164);
+    font-weight: 500;
+    text-decoration: none;
+}
+header a:hover{
+    color: black;
+}
+.navigation  li:first-child > a{
+    color: black;
+}
+header button{
+    margin: 16px 0px;
+    height: 38px;
+}
+.menu{
+    width: 30px;
+    height: 30px;
+}
+h1{
+    font-size: 50px;
+}
+#container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+#first-container, #second-container{
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+}
+#img{
+    width: 100%;
+}
+/* Currency */
+#currency-row1, #currency-row2{
+    display: flex;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    width: fit-content;
+}
+.currency1, .currency2{
+    font-weight: 700;
+    padding: 15px 30px;
+    border: 1px solid lightgrey;
+    color: lightgrey;
+}
+.currency1:hover, .currency2:hover{
+    cursor: pointer;
+    background-color: #833AE0;
+    /* border-color: #833AE0; */
+    color: white;
+
+}
+.area1, .area2{
+    width: calc(100% - 40px);
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.area1>p, .area2>p{
+    margin: 50px 0px 5px;
+}
+#input1, #input2{
+    background-color: white;
+    border: none;
+    font-size: 50px;
+    font-weight: 700;
+    width: 75%;
+    outline: 0;
+}
+.list{
+    list-style: none;
+    color: #959BA4;
+    background-color: #F5F5F6;
+    width: 135px;
+    padding: 10px;
+    height: 140px;
+    display: none;
+    margin-top: -201px;
+    margin-left: -79px;
+}
+.active{
+    background-color: #833AE0;
+    border-color: #833AE0;
+    color: white;
+}
+.show{
+    display: block;
+}
+
+@media only screen and (max-width: 1200px){
+    #container{
+        display: block;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .navigation{
+        display: none;
+    }
+    .media{
+        display: flex;
+    }
+    h1{
+        width: 50%;
+    }
+    main{
+        margin-top: 80px;
+        margin-left: 20%;
+    }
+}
