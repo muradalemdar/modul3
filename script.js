@@ -74,4 +74,4 @@ input2.addEventListener('keypress', calc2);
 function navBar(){
     list.classList.toggle("show");
 }
-media.addEventListener("click", navBar);
+media.addEventListener("click", navBar)
